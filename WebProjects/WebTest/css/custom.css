@@ -1,0 +1,20 @@
+.container{
+    /* background-color: blueviolet; */
+    border: white 2px solid;
+    border-radius: 20px;
+}
+
+.mainPanels{
+    border: 2px solid none;
+    padding: 10px;
+}
+
+.sidePanel{
+    border: 2px solid none;
+    padding: 10px;
+}
+
+.container button{
+    background-color: purple;
+    color: orange;
+}

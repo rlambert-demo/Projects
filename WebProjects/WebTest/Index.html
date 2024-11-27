@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <title>Micromanaging Mob Boss</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../WebTest/css/bootstrap.css" rel="stylesheet">
+  <link href="../WebTest/css/custom.css" rel="stylesheet">
+  <script src="../WebTest/js/bootstrap.js"></script>
+  <script src="../WebTest/js/custom.js"></script>
+</head>
+<body onload="checkSaveGame()">
+
+<div class="container">
+  <h1>Micromanaging Mob Boss</h1>
+  <p id="money">Gold: 0 (+1/s)</p>
+  <table>
+    <tr>
+      <td>
+        <button onclick="clickMoney()">Steal Money</button>
+      </td>
+      <td>
+        <span id="moneyStolen">Money Stolen: 0</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="buyItem1()">Hire Petty Thief (+1/s)</button>
+      </td>
+      <td>
+        <span id="item1NextCost">Cost: 2</span> <span id="item1Amount">Purchased: 0</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="buyItem2()">Hire Goons (+5/s)</button>
+      </td>
+      <td>
+        <span id="item2NextCost">Cost: 500</span> <span id="item2Amount">Purchased: 0</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="buyItem3()">Hire Loan Shark (+20/s)</button>
+      </td>
+      <td>
+        <span id="item3NextCost">Cost: 2000</span> <span id="item3Amount">Purchased: 0</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="saveGame()">Save Game</button><button onclick="deleteGame()">Delete Game</button>
+      </td>
+      <td>
+        <span id="lastSaved">Last Saved: 0 Seconds Ago</span>
+      </td> 
+    </tr>
+  </table>
+</div>
+<!-- 'ctrl + /' for comments -->
+</body>
+</html> 
